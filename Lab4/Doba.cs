@@ -39,7 +39,7 @@ namespace Lab4
     }
     public class Minute : Time
     {
-        public int MinutesInHour { get; }
+        public int MinutesInHour { get; set; }
 
         public Minute()
         {
@@ -67,7 +67,7 @@ namespace Lab4
     }
     public class Hour : Time
     {
-        public int HoursInDay { get; }
+        public int HoursInDay { get; set; }
         public Hour() 
         {
             Amount = 0;
