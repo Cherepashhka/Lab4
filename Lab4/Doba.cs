@@ -130,12 +130,12 @@ namespace Lab4
         {
             double DayPartPerc = (HourCl.Amount + (MinuteCl.Amount) / (1.0 * MinuteCl.MinutesInHour)) / (1.0 * HourCl.HoursInDay);
             if (DayPartPerc >= 0 && DayPartPerc < 0.25)
-                return "Нiч";
+                return "Night";
             if (DayPartPerc >= 0.25 && DayPartPerc < 0.5)
-                return "Ранок";
+                return "Morning";
             if (DayPartPerc >= 0.5 && DayPartPerc < 0.75)
-                return "День";
-            return "Вечiр";
+                return "Day";
+            return "Evening";
         }
     }
 }
